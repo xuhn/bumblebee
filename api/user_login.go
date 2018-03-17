@@ -1,8 +1,8 @@
 package api
 
 import (
-	"github.com/xuhn/optimusprime/common"
-	"github.com/xuhn/optimusprime/log"
+	"optimusprime/common"
+	"optimusprime/log"
 	"bumblebee/logic"
 	"bumblebee/model"
 	"bumblebee/util/request"

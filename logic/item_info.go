@@ -1,7 +1,7 @@
 package logic
 
 import (
-	"github.com/xuhn/optimusprime/log"
+	"optimusprime/log"
 	"bumblebee/dao"
 	"bumblebee/model"
 )

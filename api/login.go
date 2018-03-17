@@ -1,13 +1,13 @@
 package api
 
 import (
-	"github.com/xuhn/optimusprime/controller"
+	"optimusprime/controller"
 	"bumblebee/logic"
 	"bumblebee/model"
 	"bumblebee/util/errormsg"
 	"bumblebee/util/request"
-	"github.com/xuhn/optimusprime/log"
-	"github.com/xuhn/optimusprime/common"
+	"optimusprime/log"
+	"optimusprime/common"
 	"github.com/dgrijalva/jwt-go"
 	"io/ioutil"
 	"time"

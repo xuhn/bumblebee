@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/xuhn/optimusprime/log"
+	"optimusprime/log"
 	"bumblebee/logic"
 	"bumblebee/model"
 	"net/http"

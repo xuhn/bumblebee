@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/xuhn/optimusprime/log"
+	"optimusprime/log"
 )
 
 func OutputResponse(w http.ResponseWriter, r interface{}) (err error) {

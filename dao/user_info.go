@@ -1,8 +1,8 @@
 package dao
 
 import (
-	"github.com/xuhn/optimusprime/common"
-	"github.com/xuhn/optimusprime/persistence/mysql"
+	"optimusprime/common"
+	"optimusprime/persistence/mysql"
 	"bumblebee/model"
 	"bumblebee/util/errormsg"
 	"strconv"
