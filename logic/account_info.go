@@ -1,11 +1,12 @@
 package logic
 
 import (
-	"optimusprime/log"
-	"bumblebee/dao"
-	"bumblebee/model"
-	"bumblebee/util/errormsg"
-	"bumblebee/util/transaction"
+	"github.com/xuhn/bumblebee/dao"
+	"github.com/xuhn/bumblebee/model"
+	"github.com/xuhn/bumblebee/util/errormsg"
+	"github.com/xuhn/bumblebee/util/transaction"
+
+	"github.com/xuhn/optimusprime/log"
 )
 
 func AddUser(userInfo *model.UserInfo) (int64, error) {

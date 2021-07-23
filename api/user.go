@@ -1,7 +1,7 @@
 package api
 
 import (
-	"optimusprime/controller"
+	"github.com/xuhn/optimusprime/controller"
 )
 
 type Stuff struct {

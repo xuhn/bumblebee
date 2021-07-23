@@ -1,8 +1,8 @@
 package transaction
 
 import (
-	"optimusprime/common"
-	"optimusprime/persistence/mysql"
+	"github.com/xuhn/optimusprime/common"
+	"github.com/xuhn/optimusprime/persistence/mysql"
 )
 
 func Begin() (string, error) {

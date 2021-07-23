@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"strconv"
 
-	"optimusprime/common"
-	"optimusprime/persistence/mysql"
-	"bumblebee/model"
+	"github.com/xuhn/bumblebee/model"
+
+	"github.com/xuhn/optimusprime/common"
+	"github.com/xuhn/optimusprime/persistence/mysql"
 )
 
 func GetItemInfo(item_id string) (*model.ItemInfo, error) {

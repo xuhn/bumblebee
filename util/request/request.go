@@ -1,11 +1,12 @@
 package request
 
 import (
-	"optimusprime/common"
-	"optimusprime/log"
-	"optimusprime/net"
 	"bytes"
 	"encoding/json"
+
+	"github.com/xuhn/optimusprime/common"
+	"github.com/xuhn/optimusprime/log"
+	"github.com/xuhn/optimusprime/net"
 )
 
 func HttpPostRequest(url string, data map[string]interface{}, result interface{}) error {

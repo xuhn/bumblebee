@@ -3,14 +3,16 @@ package main
 import (
 	"fmt"
 	_ "net/http/pprof"
-	"optimusprime/common"
-	"optimusprime/controller"
-	"optimusprime/log"
-	"optimusprime/net"
 	"os"
-	_ "reflect"
 	"reflect"
-	"bumblebee/api"
+	_ "reflect"
+
+	"github.com/xuhn/bumblebee/api"
+
+	"github.com/xuhn/optimusprime/common"
+	"github.com/xuhn/optimusprime/controller"
+	"github.com/xuhn/optimusprime/log"
+	"github.com/xuhn/optimusprime/net"
 )
 
 func listenAndServeTCP() {
@@ -38,22 +40,21 @@ func listenAndServeTCP() {
 func main() {
 	controller.Init()
 	log.INFO("Running server...")
-		controller.RegisterController((*api.User)(nil),
-			[]*controller.MethodType{
-				&controller.MethodType{
-					Name: "Show",
-					Args: []*controller.MethodArg{
-						&controller.MethodArg{Name: "suite", Type: reflect.TypeOf((*string)(nil))},
-					},
+	controller.RegisterController((*api.User)(nil),
+		[]*controller.MethodType{
+			&controller.MethodType{
+				Name: "Show",
+				Args: []*controller.MethodArg{
+					&controller.MethodArg{Name: "suite", Type: reflect.TypeOf((*string)(nil))},
 				},
-			})
-		controller.RegisterController((*api.Passport)(nil),
-			[]*controller.MethodType{
-				&controller.MethodType{
-					Name: "Login",
-					Args: []*controller.MethodArg{
-					},
-				},
-			})
+			},
+		})
+	controller.RegisterController((*api.Passport)(nil),
+		[]*controller.MethodType{
+			&controller.MethodType{
+				Name: "Login",
+				Args: []*controller.MethodArg{},
+			},
+		})
 	controller.Run(0)
 }

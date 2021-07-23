@@ -6,14 +6,16 @@ time:2016.8.28
 package api
 
 import (
-	"optimusprime/log"
-	_ "bumblebee/dao"
 	"crypto/sha1"
 	"fmt"
 	"io"
 	"net/http"
 	"sort"
 	"strings"
+
+	_ "github.com/xuhn/bumblebee/dao"
+
+	"github.com/xuhn/optimusprime/log"
 )
 
 type (

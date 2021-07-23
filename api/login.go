@@ -1,18 +1,19 @@
 package api
 
 import (
-	"optimusprime/controller"
-	"bumblebee/logic"
-	"bumblebee/model"
-	"bumblebee/util/errormsg"
-	"bumblebee/util/request"
-	"optimusprime/log"
-	"optimusprime/common"
-	"github.com/dgrijalva/jwt-go"
 	"io/ioutil"
 	"time"
-)
 
+	"github.com/xuhn/bumblebee/logic"
+	"github.com/xuhn/bumblebee/model"
+	"github.com/xuhn/bumblebee/util/errormsg"
+	"github.com/xuhn/bumblebee/util/request"
+
+	"github.com/dgrijalva/jwt-go"
+	"github.com/xuhn/optimusprime/common"
+	"github.com/xuhn/optimusprime/controller"
+	"github.com/xuhn/optimusprime/log"
+)
 
 type Passport struct {
 	*controller.Controller

@@ -1,8 +1,9 @@
 package api
 
 import (
-	"bumblebee/model"
 	"fmt"
+
+	"github.com/xuhn/bumblebee/model"
 )
 
 var responseCode = map[string]map[string]interface{}{

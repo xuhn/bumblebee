@@ -1,12 +1,14 @@
 package dao
 
 import (
-	"optimusprime/common"
-	"optimusprime/persistence/mysql"
-	"bumblebee/model"
-	"bumblebee/util/errormsg"
 	"strconv"
 	_ "strconv"
+
+	"github.com/xuhn/bumblebee/model"
+	"github.com/xuhn/bumblebee/util/errormsg"
+
+	"github.com/xuhn/optimusprime/common"
+	"github.com/xuhn/optimusprime/persistence/mysql"
 )
 
 func GetUserInfo(user_id string) (*model.UserInfo, error) {

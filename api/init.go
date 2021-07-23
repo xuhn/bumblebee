@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"optimusprime/log"
-	"optimusprime/net"
-	"optimusprime/task"
+	"github.com/xuhn/optimusprime/log"
+	"github.com/xuhn/optimusprime/net"
+	"github.com/xuhn/optimusprime/task"
 )
 
 type APIRequest struct {

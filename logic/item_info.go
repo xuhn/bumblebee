@@ -1,9 +1,10 @@
 package logic
 
 import (
-	"optimusprime/log"
-	"bumblebee/dao"
-	"bumblebee/model"
+	"github.com/xuhn/bumblebee/dao"
+	"github.com/xuhn/bumblebee/model"
+
+	"github.com/xuhn/optimusprime/log"
 )
 
 func GetItem(itemId string) (*model.ItemInfo, string) {

@@ -1,10 +1,12 @@
 package api
 
 import (
-	"optimusprime/log"
-	"bumblebee/logic"
-	"bumblebee/model"
 	"net/http"
+
+	"github.com/xuhn/bumblebee/logic"
+	"github.com/xuhn/bumblebee/model"
+
+	"github.com/xuhn/optimusprime/log"
 )
 
 func GetItem(w http.ResponseWriter, r *http.Request) {

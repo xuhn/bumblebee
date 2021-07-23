@@ -1,13 +1,15 @@
 package api
 
 import (
-	"optimusprime/common"
-	"optimusprime/log"
-	"bumblebee/logic"
-	"bumblebee/model"
-	"bumblebee/util/request"
-	"bumblebee/util/errormsg"
 	"net/http"
+
+	"github.com/xuhn/bumblebee/logic"
+	"github.com/xuhn/bumblebee/model"
+	"github.com/xuhn/bumblebee/util/errormsg"
+	"github.com/xuhn/bumblebee/util/request"
+
+	"github.com/xuhn/optimusprime/common"
+	"github.com/xuhn/optimusprime/log"
 )
 
 func UserLogin(w http.ResponseWriter, r *http.Request) {
